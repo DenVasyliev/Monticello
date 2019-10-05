@@ -30,11 +30,6 @@ $(document).ready(function () {
 });
 
 function initMap() {
-    let address = {
-        lat: 38.112322,
-        lng: -89.503285
-    }
-
     let center = {
           lat: 38.112322,
           lng: -89.503285
@@ -206,7 +201,7 @@ function initMap() {
     });
 
     let marker = new google.maps.Marker({
-        position: address,
+        position: { lat: 38.112322, lng: -89.503285},
         map: map,
         icon: '../img/360.png'
     });
