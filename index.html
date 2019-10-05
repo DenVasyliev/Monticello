@@ -15,7 +15,7 @@
 <body>
 	<header>
 		<div class="container container--menu">
-				<nav>
+				<nav id="menu">
 					<div class="logo">
 						<a href="#" class="logo__link">
 							<img class="logo__img" src="img/Logo.png" alt="Monticello">
@@ -58,42 +58,27 @@
 					<div class="container container--header">
 						<h1 class="section__main--title">Simple & mordern</h1>
 						<p class="section__main--subtitle">We make the world's beautiful every day</p>
-						
-						<a href="#projects">
-							<svg width="35" height="35" class="scroll" >
-								<use xlink:href="#scroll"></use>
-							</svg>
-						</a>
-						
 					</div>
 				</div>
 				<div class="slide" style="background-image:url('img/main.png');">
 					<div class="container container--header">
 						<h1 class="section__main--title">Simple & mordern</h1>
 						<p class="section__main--subtitle">We make the world's beautiful every day</p>
-						
-						<a href="#projects">
-							<svg width="35" height="35" class="scroll" >
-								<use xlink:href="#scroll"></use>
-							</svg>
-						</a>
-						
 					</div>
 				</div>
 				<div class="slide" style="background-image:url('img/main.png');">
 					<div class="container container--header">
 						<h1 class="section__main--title">Simple & mordern</h1>
 						<p class="section__main--subtitle">We make the world's beautiful every day</p>
-						
-						<a href="#projects">
-							<svg width="35" height="35" class="scroll" >
-								<use xlink:href="#scroll"></use>
-							</svg>
-						</a>
-						
 					</div>
 				</div>
 			</div>
+			<a href="#projects">
+				<svg width="35" height="35" class="scroll" >
+					<use xlink:href="#scroll"></use>
+				</svg>
+			</a>
+			
 		</section>
 		<section class="section" id="about">
 			<h2 class="section__header">what we do</h2>
@@ -143,7 +128,7 @@
 					<div class="news__box">
 						<img class="news__photo" src="img/slide1.png" alt="">
 						<div class="news__info">
-							<h4 class="news__header">See The Unmatched Beauty Of The Great.</h4>
+							<h4 class="news__header"><a href="#">See The Unmatched Beauty Of The Great.</a></h4>
 							<p>Free directories: directories are perfect for customers that are... searching for </p>
 							<div class="news__author">
 								<img src="img/author1.png" alt="author photo" class="news__author--img">
@@ -159,7 +144,7 @@
 					<div class="news__box news__slide">
 						<img class="news__photo" src="img/slide2.png" alt="">
 						<div class="news__info">
-							<h4 class="news__header">Effective Advertising Pointers.</h4>
+							<h4 class="news__header"><a href="#">Effective Advertising Pointers.</a></h4>
 							<p>Having a home based business is a wonderful asset to your life...</p>
 							<div class="news__author">
 								<img src="img/author2.png" alt="author photo" class="news__author--img">
@@ -175,7 +160,7 @@
 					<div class="news__box news__slide">
 						<img class="news__photo" src="img/slide3.png" alt="">
 						<div class="news__info">
-							<h4 class="news__header">Hypnotize Yourself Into The Ghost.</h4>
+							<h4 class="news__header"><a href="#">Hypnotize Yourself Into The Ghost.</a></h4>
 							<p>There are many things that are important to catalog design....</p>
 							<div class="news__author">
 								<img src="img/author3.png" alt="author photo" class="news__author--img">
@@ -191,7 +176,7 @@
 					<div class="news__box">
 						<img class="news__photo" src="img/slide1.png" alt="">
 						<div class="news__info">
-							<h4 class="news__header">See The Unmatched Beauty Of The Great.</h4>
+							<h4 class="news__header"><a href="#">See The Unmatched Beauty Of The Great.</a></h4>
 							<p>Free directories: directories are perfect for customers that are... searching for </p>
 							<div class="news__author">
 								<img src="img/author1.png" alt="author photo" class="news__author--img">
@@ -207,7 +192,7 @@
 					<div class="news__box news__slide">
 						<img class="news__photo" src="img/slide2.png" alt="">
 						<div class="news__info">
-							<h4 class="news__header">Effective Advertising Pointers.</h4>
+							<h4 class="news__header"><a href="#">Effective Advertising Pointers.</a></h4>
 							<p>Having a home based business is a wonderful asset to your life...</p>
 							<div class="news__author">
 								<img src="img/author2.png" alt="author photo" class="news__author--img">
@@ -223,7 +208,7 @@
 					<div class="news__box news__slide">
 						<img class="news__photo" src="img/slide3.png" alt="">
 						<div class="news__info">
-							<h4 class="news__header">Hypnotize Yourself Into The Ghost.</h4>
+							<h4 class="news__header"><a href="#">Hypnotize Yourself Into The Ghost.</a></h4>
 							<p>There are many things that are important to catalog design....</p>
 							<div class="news__author">
 								<img src="img/author3.png" alt="author photo" class="news__author--img">
@@ -273,24 +258,22 @@
 					<div class="form__info">
 
 						<div class="form__info--owner">
-							<a href="#" target="_blank">
+							<div class="form__info--part">
 								<i class="fas fa-map-marker-alt"></i>
 								91 Nolan Extensions Suite 670
-							</a>
-							
-							<a href="tel:+001-356-868-2454">
+							</div>
+							<a  class="form__info--part"href="tel:+001-356-868-2454">
 								<i class="fas fa-phone"></i>
 								+001-356-868-2454
 							</a>
-							
-							<a href="mailto:gahuy93@gmail.com">
+							<a  class="form__info--part"href="mailto:gahuy93@gmail.com">
 								<i class="fas fa-inbox"></i>
 								gahuy93@gmail.com
 							</a>
-							<a href="#">
+							<div class="form__info--part">
 								<i class="fas fa-clock"></i>
 								From 07:05AM to 19:30PM
-							</a>
+							</div>
 						</div>
 
 						<div class="form__info--user">
@@ -340,7 +323,7 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/scripts.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8xsYzREMjcz36FCktaJB-c0FrSBM5Nd8&callback=initMap" type="text/javascript"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV0cpLEnQ5LQURpKDbtZteK-W9oLZAwEY&callback=initMap" type="text/javascript"></script>
 
 	<svg style="display: none;">
 		<symbol id="scroll" viewBox="0 0 384.97 384.97">
