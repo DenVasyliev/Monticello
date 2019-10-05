@@ -30,14 +30,12 @@ $(document).ready(function () {
 });
 
 function initMap() {
-    let center = {
-          lat: 38.112322,
-          lng: -89.503285
-    }
-    
-    let map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
-        center: center,
+
+	let element = document.getElementById('map');
+
+    let options = {
+    	zoom: 10,	
+        center: {lat: 38.112322, lng: -89.503285},
         styles: [
 		  {
 		    "elementType": "geometry",
@@ -198,11 +196,13 @@ function initMap() {
 		    ]
 		  }
 		]
-    });
+    }
+    
+    let map = new google.maps.Map(element, options);
 
     let marker = new google.maps.Marker({
         position: { lat: 38.112322, lng: -89.503285},
-        map: map
-//         icon: '../img/360.png'
+        map: map,
+        icon: '../img/marker.png'
     });
 };
