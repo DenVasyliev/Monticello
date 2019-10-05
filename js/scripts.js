@@ -202,7 +202,7 @@ function initMap() {
 
     let marker = new google.maps.Marker({
         position: { lat: 38.112322, lng: -89.503285},
-        map: map,
-        icon: '../img/360.png'
+        map: map
+//         icon: '../img/360.png'
     });
 };
