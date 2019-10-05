@@ -16,9 +16,17 @@ $(document).ready(function () {
 	  	slidesToScroll: 1,
 	  	autoplay: true,
 	  	autoplaySpeed: 4000,
-	  	prevArrow: '<button class="arrow arrow--prev"><svg width="35" height="35" ><use xlink:href="#scroll"></use></svg></button>',
-	  	nextArrow: '<button class="arrow arrow--next"><svg width="35" height="35" ><use xlink:href="#scroll"></use></svg></button>'
+	  	prevArrow: '<button class="arrow arrow--prev"><svg width="32" height="32" ><use xlink:href="#scroll"></use></svg></button>',
+	  	nextArrow: '<button class="arrow arrow--next"><svg width="32" height="32" ><use xlink:href="#scroll"></use></svg></button>'
 	});
+	$("#menu").on("click","a", function (e) {
+    	e.preventDefault();
+
+    	var id  = $(this).attr('href'),
+        	top = $(id).offset().top;
+
+    	$('body,html').animate({scrollTop: top}, 800);
+    });
 });
 
 function initMap() {
