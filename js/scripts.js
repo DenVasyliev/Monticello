@@ -209,6 +209,5 @@ function initMap() {
         position: address,
         map: map,
         icon: '../img/marker.png',
-        title: '91 Nolan Extensions Suite 670'
     });
 };
